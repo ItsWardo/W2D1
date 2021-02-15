@@ -12,10 +12,21 @@ let a3 = [1, 3, 7, 4];
 diffArrayLen(a1, a2); // => false
 diffArrayLen(a1, a3); // => true
 ***********************************************************************/
+let a1 = ['a', 'b', 'c'];
+let a2 = ['w', 'x', 'y'];
+let a3 = [1, 3, 7, 4];
 
 function diffArrayLen(arr1, arr2) {
-  // your code here...
+  if (arr1.length === arr2.length){
+    return false;
+  }else{
+    return true;
+  }
 }
 
+
+
+console.log(diffArrayLen(a1, a2)); // => false
+console.log(diffArrayLen(a1, a3)); // => true
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = diffArrayLen;
