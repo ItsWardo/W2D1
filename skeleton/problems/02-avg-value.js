@@ -10,8 +10,16 @@ avgValue([100, 60, 64]); // => 74.66666666666667
 ***********************************************************************/
 
 function avgValue(array) {
-  // your code here...
+  let sum = 0;
+  for (let i = 0; i < array.length; i ++){
+    let el = array[i];
+    sum += el;
+  }
+  return sum / array.length;
 }
+console.log(avgValue([10, 20])); // => 15
+console.log(avgValue([2, 3, 7])); // => 4
+console.log(avgValue([100, 60, 64])); // => 74.66666666666667
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = avgValue;
