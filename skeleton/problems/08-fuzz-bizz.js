@@ -9,8 +9,17 @@ fuzzBizz(30) => [ 2, 4, 6, 7, 8, 10, 12, 16, 18, 20, 21, 22, 24, 26 ]
 *******************************************************************************/
 
 function fuzzBizz(max) {
-  // your code here...
+  let nums = [];
+  for (let i = 0; i < max; i++){
+    if((i % 7 === 0||i % 2 === 0)&& i % 14 !== 0){
+      nums.push(i);
+    }
+  }
+  return nums;
 }
+
+console.log(fuzzBizz(17));  [ 2, 4, 6, 7, 8, 10, 12, 16 ]
+console.log(fuzzBizz(30));  [ 2, 4, 6, 7, 8, 10, 12, 16, 18, 20, 21, 22, 24, 26 ]
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = fuzzBizz;

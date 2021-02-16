@@ -11,7 +11,7 @@ intersect(['a', 'b', 'c'], ['x', 'y', 'z']) => []
 *******************************************************************************/
 
 function intersect(arr1, arr2) {
-  // your code here...
+ 
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
